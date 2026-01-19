@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.CafeSea" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/red_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="android:windowBackground">#FDFDFD</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#1C1B1F</item>
+
+        <item name="android:statusBarColor">#FDFDFD</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:navigationBarColor">#FDFDFD</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <item name="android:windowTranslucentStatus">false</item>
+    </style>
+
+    <style name="Theme.CafeSea" parent="Base.Theme.CafeSea" />
+
+    <style name="CircleImage" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="RoundedImage" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerSize">16dp</item>
+    </style>
+</resources>

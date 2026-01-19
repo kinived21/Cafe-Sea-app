@@ -1,0 +1,131 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:padding="8dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:elevation="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Edit Profile"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivEditProfileImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pro1"
+                app:shapeAppearanceOverlay="@style/CircleImage"
+                app:strokeColor="#EEEEEE"
+                app:strokeWidth="2dp" />
+
+            <ImageView
+                android:id="@+id/btnChooseAvatar"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/white_circle_bg"
+                android:backgroundTint="@color/red_dark"
+                android:padding="6dp"
+                android:src="@drawable/baseline_edit_24"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Full Name" android:layout_marginTop="20dp" android:textColor="#888888"/>
+        <EditText android:id="@+id/etEditName" android:layout_width="match_parent" android:layout_height="50dp" android:background="@drawable/edittext_border" android:padding="12dp" android:hint="Enter Name" android:textColor="@color/black"
+            />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mobile Number" android:layout_marginTop="16dp" android:textColor="#888888"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etEditPhone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_border"
+                android:padding="12dp"
+                android:enabled="false"
+                android:hint="Enter Phone"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tvChangePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change"
+                android:textColor="@color/red_dark"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email Address" android:layout_marginTop="16dp" android:textColor="#888888"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etEditEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_border"
+                android:padding="12dp"
+                android:enabled="false"
+                android:hint="Enter Email"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tvChangeEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change"
+                android:textColor="@color/red_dark"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Date of Birth" android:layout_marginTop="16dp" android:textColor="#888888"/>
+        <EditText android:id="@+id/etEditDOB" android:layout_width="match_parent" android:layout_height="50dp" android:background="@drawable/edittext_border" android:padding="12dp" android:focusable="false" android:hint="Select Date" android:textColor="@color/black"
+            />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gender" android:layout_marginTop="16dp" android:textColor="#888888"/>
+        <Spinner android:id="@+id/spinnerGender" android:layout_width="match_parent" android:layout_height="50dp" android:background="@drawable/edittext_border" android:textColor="@color/black"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUpdateProfile"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="20dp"
+            android:text="Save Changes"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/red_dark"
+            app:cornerRadius="15dp"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

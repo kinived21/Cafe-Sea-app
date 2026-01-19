@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FDFDFD"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/btnBackAddress"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/white_circle_bg"
+        android:padding="8dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:tint="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:text="Delivery Address"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        android:hint="Type address manually"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etManualAddress"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="16dp"
+        android:text="OR"
+        android:textColor="#888888"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPickOnMap"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:text="Choose on Google Maps"
+        app:icon="@drawable/baseline_location_on_24"
+        android:backgroundTint="#4285F4"
+        app:cornerRadius="12dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSaveAddress"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:text="Save Address"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_3d_rounded"
+        android:backgroundTint="@color/red_dark"/>
+
+</LinearLayout>
